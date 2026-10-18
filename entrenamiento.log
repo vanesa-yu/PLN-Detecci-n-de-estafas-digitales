@@ -1,0 +1,52 @@
+{
+  "origen": "demostracion_sintetica",
+  "n_total": 60,
+  "n_entrenamiento": 48,
+  "n_prueba": 12,
+  "f1_cv_seleccionado": 0.9213,
+  "modelo_seleccionado": "LogisticRegression",
+  "parametros": {
+    "clasificador": "LogisticRegression(class_weight='balanced', max_iter=2000, random_state=42)",
+    "clasificador__C": "0.5",
+    "tfidf__analyzer": "word",
+    "tfidf__ngram_range": "(1, 2)"
+  },
+  "reporte_prueba": {
+    "0": {
+      "precision": 0.8,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.7272727272727273,
+      "support": 6.0
+    },
+    "1": {
+      "precision": 0.7142857142857143,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.7692307692307693,
+      "support": 6.0
+    },
+    "accuracy": 0.75,
+    "macro avg": {
+      "precision": 0.7571428571428571,
+      "recall": 0.75,
+      "f1-score": 0.7482517482517483,
+      "support": 12.0
+    },
+    "weighted avg": {
+      "precision": 0.7571428571428571,
+      "recall": 0.75,
+      "f1-score": 0.7482517482517483,
+      "support": 12.0
+    }
+  },
+  "matriz_confusion": [
+    [
+      4,
+      2
+    ],
+    [
+      1,
+      5
+    ]
+  ],
+  "advertencia": "Si origen=demostracion_sintetica, estas metricas NO prueban deteccion de fraude real."
+}
